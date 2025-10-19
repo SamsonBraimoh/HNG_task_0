@@ -1,0 +1,103 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.root-container{
+    width: 60%;
+    /* height: 90%; */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.content{
+    width: 60%;
+    background-color: #FAF7F0;
+    padding: 10px;
+    border-radius: 0 15px 15px 0;
+}
+.avatar{
+    width: 40%;
+    height: 100%;
+    background-color: #1E2A5E;
+    border-radius: 10px;
+}
+img{
+    height: 50%;
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+p[data-testid="test-user-bio"]{
+    font-size: 15px;
+    color: #374151;
+}
+ul[data-testid="test-user-social-links"]{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+.fa-brands{
+    color: #2d2727;
+}
+.fa-solid{
+    color: #2d2727;
+}
+.list{
+    font-style: italic;
+    font-size: 14px;
+    color: #374151;
+}
+.role{
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 100;
+    color: #4B5563;
+}
+h2[data-testid="test-user-name"]{
+    color: #111827;
+}
+
+
+@media (max-width: 600px) {
+    .root-container{
+        flex-direction: column-reverse;
+    }
+    .content{
+        height: 70%;
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+    }
+    .avatar{
+        height: 30%;
+        width: 100%;
+        padding: 10px;
+        border-radius: 15px 15px 0 0;
+    }
+    h2[data-testid="test-user-name"]{
+        font-size: 15px;
+    }
+    p[data-testid="test-user-bio"]{
+        font-size: 10px;
+    }
+    .list{
+        font-size: 10px;
+    }
+    .role{
+        font-size: 7px;
+    }
+    h3{
+        font-size: 13px;
+    }
+    ul[data-testid="test-user-social-links"]{
+        padding: 0;
+        justify-self: center;
+    }
+}

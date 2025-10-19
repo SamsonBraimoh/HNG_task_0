@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Stage 0 Task</title>
+</head>
+<body>
+    <article class="root-container" data-testid="test-profile-card">
+        <main class="content">
+            <h2 data-testid="test-user-name">Samson Braimoh<sub class="role"> Frontend Developer</sub></h2>
+            <p data-testid="test-user-bio"><em>A passionate frontend developer who enjoys turning ideas into clean, responsive, and user-friendly websites. I love learning new technologies and solving real-world problems with code.</em></p>
+            <section>
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies" class="list">
+                    <li>Playing football.</li>
+                    <li>Listening to good music.</li>
+                    <li>Solving mathematical puzzle.</li>
+                    <li>Writing clean code.</li>
+                </ul>
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes" class="list">
+                    <li>Noisy Environment.</li>
+                    <li>Poor Electricity.</li>
+                    <li>Poor Network.</li>
+                </ul>
+            </section>
+            <nav>
+                <h3>Get in touch</h3>
+                <ul data-testid="test-user-social-links">
+                    <li><a href="https://samsonbraimoh32@gmail.com/" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a></li>
+                    <li><a href="https://web.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a></li>
+                </ul>
+            </nav>
+            <p data-testid="test-user-time" id="currentTime">time</p>
+        </main>
+        <aside class="avatar">
+            <figure>
+                <img src="./avatarr.jpg" alt="" data-testid="test-user-avatar">
+            </figure>
+        </aside>
+    </article>
+    <script src="app.js"></script>
+</body>
+</html>
