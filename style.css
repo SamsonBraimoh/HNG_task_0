@@ -16,6 +16,7 @@ body{
     display: flex;
     flex-direction: row-reverse;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background-color: #FAF7F0;
 }
 .content{
     width: 60%;
@@ -47,8 +48,17 @@ ul[data-testid="test-user-social-links"]{
 .fa-brands{
     color: #2d2727;
 }
+.fa-brands:hover{
+    color: #756969;
+}
 .fa-solid{
     color: #2d2727;
+}
+.fa-solid:hover{
+    color: #756969;
+}
+a:focus{
+    outline: #4B5563;
 }
 .list{
     font-style: italic;
