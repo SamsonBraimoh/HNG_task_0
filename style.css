@@ -1,5 +1,5 @@
+  
 html, body{
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -26,7 +26,7 @@ body{
 }
 .avatar{
     width: 40%;
-    height: 100%;
+    /* height: 100%; */
     background-color: #1E2A5E;
     border-radius: 10px;
 }
@@ -37,7 +37,6 @@ img{
     border: 5px solid white;
 }
 p[data-testid="test-user-bio"]{
-    font-size: 15px;
     color: #374151;
 }
 ul[data-testid="test-user-social-links"]{
@@ -74,7 +73,54 @@ a:focus{
 h2[data-testid="test-user-name"]{
     color: #111827;
 }
+.nav{
+    display: flex;
+    justify-self: center;
+    gap: 50px;
+}
+.cardBtn{
+    background-color:  #1E2A5E;
+    border: 2px solid  #FAF7F0;
+    color:  #FAF7F0;
+    border-radius: 5px;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
 
+
+/*about styling*/
+
+.aboutAvatar{
+    width: 30%;
+}
+.aboutContent{
+    width: 70%;
+}
+.aboutContainer{
+    display: flex;
+    background-color: #FAF7F0;
+    height: 100%;
+    padding: 20px;
+}
+.aboutBtn{
+    background-color:  #FAF7F0;
+    border: 2px solid #1E3A8A;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* styling for contact page */
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+}
+.contactMain{
+    border: 1px solid black;
+    height: 80%;
+}
 
 @media (max-width: 600px) {
     .root-container{
@@ -94,7 +140,7 @@ h2[data-testid="test-user-name"]{
     h2[data-testid="test-user-name"]{
         font-size: 15px;
     }
-    p[data-testid="test-user-bio"]{
+    p{
         font-size: 10px;
     }
     .list{
@@ -110,4 +156,26 @@ h2[data-testid="test-user-name"]{
         padding: 0;
         justify-self: center;
     }
+
+    /* about responsive styling */
+    .aboutContainer{
+        flex-direction: column;
+    } 
+    .aboutAvatar{
+        height: 30%;
+        width: 100%;
+    }
+    .aboutContent{
+        height: 70%;
+        width: 100%;
+    }
+    .list{
+        font-size: 10px;
+    }
 }
+@media (min-width: 600px) and (max-width: 950px) {
+    .nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+  }
