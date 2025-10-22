@@ -116,11 +116,49 @@ h2[data-testid="test-user-name"]{
 .contactForm{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 .contactMain{
-    border: 1px solid black;
+    background-color: #FAF7F0;
     height: 80%;
+    width: 40%;
+    padding: 0 20px 0 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
+.contactHeading{
+    justify-content: center;
+    display: flex;
+}
+input::placeholder {
+    font-style: italic;
+  }
+input{
+    outline: none;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+
+}  
+.formSubmitButton{
+    height: 40px;
+    background-color: #1E2A5E;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.formSubmitButton:hover{
+    background-color: #3c4778;
+}
+textarea{
+    height: 100px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 
 @media (max-width: 600px) {
     .root-container{

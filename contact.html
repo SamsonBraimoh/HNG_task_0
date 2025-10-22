@@ -8,21 +8,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body style="height: 100vh;">
     <!-- <article> -->
         <main class="contactMain">
-            <h2>Send a message</h2>
-            <form action="" class="contactForm">
-                <label for="">Name</label>
-                <input type="text">
-                <label for="">Email</label>
-                <input type="email">
-                <label for="">Subject</label>
-                <input type="text">
-                <label for="">Message</label>
-                <textarea name="" id=""></textarea>
+            <h2 class="contactHeading">Send a message</h2>
+            <form action="" class="contactForm" id="contactForm" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="e.g, Samson Braimoh" autocomplete="name" aria-describedby="nameError" data-testid = "test-contact-name">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="e.g, example@gmail.com" autocomplete="email" aria-describedby="emailError" data-testid = "test-contact-email">
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="subject" autocomplete="off" aria-describedby="subject" data-testid = "test-contact-subject">
+               
+                <label for="message">Message</label>
+                <textarea name="" id="message" data-testid = "test-contact-message"></textarea>
+                
+                <button class="formSubmitButton" type="submit">Submit</button>
             </form>
+            <p id="errorMessage" data-testid="test-contact-error-email" style="font-style: italic; color: red;"></p>
+            <p id="success" data-testid="test-contact-success" style="font-style: italic;"></p>
         </main>
     <!-- </article> -->
+    <script src="contact.js"></script>
 </body>
 </html>
