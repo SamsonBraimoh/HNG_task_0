@@ -13,6 +13,7 @@ form.addEventListener("submit", (e) =>{
 
     if (!name||!email||!subject||!message){
         error.textContent = "***Please, fill in all fields";
+        success.textContent = "";
     }else{
        
         const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
