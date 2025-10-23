@@ -29,8 +29,8 @@ form.addEventListener("submit", (e) =>{
         success.textContent = ""
     return;
       }
-        alert("Sent")
         success.textContent = "Message sent successfully.";
+        // alert("Sent")
         error.textContent = "";
         form.reset();
     }
